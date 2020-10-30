@@ -86,7 +86,8 @@ DATABASES = {
     'NAME': 'puppy_store_drf',
     'USER': 'moringa',
     'PASSWORD': '**kwasync',
-    
+    'HOST': '127.0.0.1',
+    'PORT': '5432',
     }
     }
 
