@@ -83,7 +83,7 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': 'frozenintime',
+    'NAME': 'puppy_store_drf',
     'USER': 'moringa',
     'PASSWORD': '**kwasync',
     
