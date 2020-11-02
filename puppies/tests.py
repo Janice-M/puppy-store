@@ -10,7 +10,7 @@ class PuppyTest(TestCase):
             name = 'Frigg' , age = 4 , breed = 'Bull Dog' ,color = 'Black'
         )
         Puppy.objects.create (
-            name = 'Thor' , age = 2 , breed = 'Chihuahua', colo = 'brown'
+            name = 'Thor' , age = 2 , breed = 'Chihuahua', color = 'brown'
         )
         
     def test_puppy_breed (self):
