@@ -1,6 +1,6 @@
 from django.test import TestCase
 from . models import Puppy
-
+from . import  __init__
 
 class PuppyTest(TestCase):
     """ Test module for Puppy model """
