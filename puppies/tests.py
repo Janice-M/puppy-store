@@ -9,4 +9,6 @@ class PuppyTest(TestCase):
         Puppy.Objects.create(
             name = 'Frigg' , age = 4 , breed = 'Bull Dog' ,color = 'Black'
         )
-        Pu
+        Puppy.Objects.create (
+            name = 'Thor' , age = 2 , breed = 'chihuahua', coloe = 'brown'
+        )
