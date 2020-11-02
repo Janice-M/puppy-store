@@ -13,3 +13,7 @@ class Puppy(models.model):
 
     def get_breed(self):
         return self.name + 'belongs to' + self.breed + 'breed'
+    
+    def __repr__ (self):
+        return self.name + 'is added'
+    
