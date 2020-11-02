@@ -7,14 +7,14 @@ class PuppyTest(TestCase):
 
     def setUp(self):
         Puppy.objects.create(
-            name='Casper', age=3, breed='Bull Dog', color='Black')
+            name='Frigg', age=3, breed='Bull Dog', color='Black')
         Puppy.objects.create(
-            name='Muffin', age=1, breed='Gradane', color='Brown')
+            name='Thor', age=1, breed='Gradane', color='Brown')
 
     def test_puppy_breed(self):
-        puppy_casper = Puppy.objects.get(name='Casper')
-        puppy_muffin = Puppy.objects.get(name='Muffin')
+        puppy_frigg = Puppy.objects.get(name='Frigg')
+        puppy_thor = Puppy.objects.get(name='Thor')
         self.assertEqual(
-            puppy_casper.get_breed(), "Casper belongs to Bull Dog breed.")
+            puppy_frigg.get_breed(), "Frigg belongs to Bull Dog breed.")
         self.assertEqual(
-            puppy_muffin.get_breed(), "Muffin belongs to Gradane breed.")
+            puppy_thor.get_breed(), "Thor belongs to Gradane breed.")
