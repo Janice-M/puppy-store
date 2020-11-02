@@ -12,3 +12,6 @@ class PuppyTest(TestCase):
         Puppy.Objects.create (
             name = 'Thor' , age = 2 , breed = 'chihuahua', coloe = 'brown'
         )
+        
+    def test_puppy_breed (self):
+        pupp
