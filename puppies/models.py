@@ -1,6 +1,6 @@
 from django.db import models
 
-class Puppy(models.model):
+class Puppy(models.Model):
     '''
     THIS CLASS HOLDA OUR PUP ATTRTIBUTES
     '''
