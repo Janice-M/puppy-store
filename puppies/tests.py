@@ -14,4 +14,5 @@ class PuppyTest(TestCase):
         )
         
     def test_puppy_breed (self):
-        puppy_frigg = Puppy.objects.get (neme = 'Frigg')
+        puppy_frigg = Puppy.objects.get (name = 'Frigg')
+        puppy_thor = Puppy.objects.get(name = 'Thor')
