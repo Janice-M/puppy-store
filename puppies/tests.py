@@ -6,11 +6,11 @@ from . models import Puppy
 class PuppyTest(TestCase):
     
     def setUp(self):
-        Puppy.Objects.create(
+        Puppy.objects.create(
             name = 'Frigg' , age = 4 , breed = 'Bull Dog' ,color = 'Black'
         )
-        Puppy.Objects.create (
-            name = 'Thor' , age = 2 , breed = 'Chihuahua', coloe = 'brown'
+        Puppy.objects.create (
+            name = 'Thor' , age = 2 , breed = 'Chihuahua', colo = 'brown'
         )
         
     def test_puppy_breed (self):
