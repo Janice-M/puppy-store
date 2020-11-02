@@ -10,7 +10,7 @@ class PuppyTest(TestCase):
             name = 'Frigg' , age = 4 , breed = 'Bull Dog' ,color = 'Black'
         )
         Puppy.Objects.create (
-            name = 'Thor' , age = 2 , breed = 'chihuahua', coloe = 'brown'
+            name = 'Thor' , age = 2 , breed = 'Chihuahua', coloe = 'brown'
         )
         
     def test_puppy_breed (self):
@@ -21,5 +21,5 @@ class PuppyTest(TestCase):
             puppy_frigg.get_breed(), "Frigg belongs to Bull Dog breed ."
         )
         self.assertEqual(
-            puppy_thor.get_breed()
+            puppy_thor.get_breed(),  "Thor belongs to Chihuahua breed"
         )
