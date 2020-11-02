@@ -85,8 +85,8 @@ DATABASES = {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     'NAME': 'puppy_store_drf',
     'USER': 'moringa',
-    'PASSWORD': '***kwasync',
-
+    'PASSWORD': '**kwasync',
+    
     }
     }
 
