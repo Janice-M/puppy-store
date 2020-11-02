@@ -1,25 +1,20 @@
 from django.test import TestCase
-from . models import Puppy
+from ..models import Puppy
 
-''' test for puppy model'''
 
 class PuppyTest(TestCase):
-    
+    """ Test module for Puppy model """
+
     def setUp(self):
         Puppy.objects.create(
-            name = 'Frigg' , age = 4 , breed = 'Bull ' ,color = 'Black'
-        )
-        Puppy.objects.create (
-            name = 'Thor' , age = 2 , breed = 'Chihuahua', color = 'brown'
-        )
-        
-    def test_puppy_breed (self):
-        puppy_frigg = Puppy.objects.get (name = 'Frigg')
-        puppy_thor = Puppy.objects.get(name = 'Thor')
-        
-        self.assertEqual (
-            puppy_frigg.get_breed(), "Frigg belongs to Bull breed ."
-        )
+            name='Casper', age=3, breed='Bull Dog', color='Black')
+        Puppy.objects.create(
+            name='Muffin', age=1, breed='Gradane', color='Brown')
+
+    def test_puppy_breed(self):
+        puppy_casper = Puppy.objects.get(name='Casper')
+        puppy_muffin = Puppy.objects.get(name='Muffin')
         self.assertEqual(
-            puppy_thor.get_breed(),  "Thor belongs to Chihuahua breed"
-        )
+            puppy_casper.get_breed(), "Casper belongs to Bull Dog breed.")
+        self.assertEqual(
+            puppy_muffin.get_breed(), "Muffin belongs to Gradane breed.")
