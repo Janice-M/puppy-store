@@ -20,3 +20,4 @@ class PuppyTest(TestCase):
         self.assertEqual (
             puppy_frigg.get_breed(), "Frigg belongs to Bull Dog breed ."
         )
+        self.assert
