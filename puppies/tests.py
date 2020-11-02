@@ -16,3 +16,7 @@ class PuppyTest(TestCase):
     def test_puppy_breed (self):
         puppy_frigg = Puppy.objects.get (name = 'Frigg')
         puppy_thor = Puppy.objects.get(name = 'Thor')
+        
+        self.assertEqual (
+            puppy_frigg.get_breed(), "Frigg belongs to Bull Dog breed ."
+        )
