@@ -3,5 +3,5 @@ from .models import Puppy
 
 class PuppySerializer (serializers.ModelSerializer):
     class Meta:
-        model = Puppy
+        model = Pup
         fields = ('name', 'age', 'breed', 'color', 'created_at', 'updated_at')
