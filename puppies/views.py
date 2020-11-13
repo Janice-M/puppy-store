@@ -22,7 +22,8 @@ def get_delete_update_puppy(request, pk):
     # update details of a single puppy
     elif request.method == 'PUT':
         return Response({})
-    @api_view(['GET', 'POST'])
+    
+@api_view(['GET', 'POST'])
 def get_post_puppies(request):
     # get all puppies
     if request.method == 'GET':
