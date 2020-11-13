@@ -19,3 +19,6 @@ def get_delete_update_puppy(request, pk):
     # delete a single puppy
     elif request.method == 'DELETE':
         return Response({})
+    # update details of a single puppy
+    elif request.method == 'PUT':
+        return Response({})
