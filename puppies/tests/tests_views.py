@@ -44,4 +44,5 @@ class GetSinglePuppyTest(TestCase):
     def test_get_valid_single_puppy(self):
             response = client.get(
             reverse('get_delete_update_puppy', kwargs={'pk': self.rambo.pk}))
-        puppy = Puppy.objects.get(pk=sel
+        puppy = Puppy.objects.get(pk=self.rambo.pk)
+        serializer = PuppySerializer(puppy)
