@@ -31,3 +31,4 @@ class GetAllPuppiesTest(TestCase):
         
         
 class GetSinglePuppyTest(TestCase):
+    def setUp(self):
