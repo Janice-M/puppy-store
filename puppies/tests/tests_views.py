@@ -27,3 +27,4 @@ class GetAllPuppiesTest(TestCase):
         # get data from db
         puppies = Puppy.objects.all()
         serializer = PuppySerializer(puppies, many=True)
+         self.assertEqual(response.data, serializer.data)
