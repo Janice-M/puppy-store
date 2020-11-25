@@ -8,3 +8,6 @@ from ..serializers import PuppySerializer
 
 # initialize the APIClient app
 client = Client()
+
+class GetAllPuppiesTest(TestCase):
+    """ Test module for GET all puppies API """
