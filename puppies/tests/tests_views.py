@@ -28,3 +28,6 @@ class GetAllPuppiesTest(TestCase):
         puppies = Puppy.objects.all()
         serializer = PuppySerializer(puppies, many=True)
         self.assertEqual(response.data, serializer.data)
+        
+        
+class GetSinglePuppyTest(TestCase):
