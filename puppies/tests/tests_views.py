@@ -40,3 +40,8 @@ class GetSinglePuppyTest(TestCase):
             name='Rambo', age=2, breed='Labrador', color='Black')
         self.ricky = Puppy.objects.create(
             name='Ricky', age=6, breed='Labrador', color='Brown')
+        
+     def test_get_valid_single_puppy(self):
+            response = client.get(
+            reverse('get_delete_update_puppy', kwargs={'pk': self.rambo.pk}))
+        puppy = Puppy.objects.get(pk=sel
