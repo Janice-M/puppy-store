@@ -21,7 +21,7 @@ class GetAllPuppiesTest(TestCase):
         Puppy.objects.create(
             name='Ricky', age=6, breed='Labrador', color='Brown')
         
-     def test_get_all_puppies(self):
+    def test_get_all_puppies(self):
             # get API response
         response = client.get(reverse('get_post_puppies'))
         # get data from db
