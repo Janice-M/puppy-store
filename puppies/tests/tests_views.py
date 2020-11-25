@@ -46,3 +46,5 @@ class GetSinglePuppyTest(TestCase):
             reverse('get_delete_update_puppy', kwargs={'pk': self.rambo.pk}))
         puppy = Puppy.objects.get(pk=self.rambo.pk)
         serializer = PuppySerializer(puppy)
+        self.assertEqual(response.data, serializer.data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
