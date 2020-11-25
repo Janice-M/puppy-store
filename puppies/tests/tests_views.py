@@ -53,4 +53,4 @@ class GetSinglePuppyTest(TestCase):
     def test_get_invalid_single_puppy(self):
         response = client.get(
             reverse('get_delete_update_puppy', kwargs={'pk': 30}))
-         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
