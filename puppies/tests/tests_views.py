@@ -32,3 +32,11 @@ class GetAllPuppiesTest(TestCase):
         
 class GetSinglePuppyTest(TestCase):
     def setUp(self):
+        self.casper = Puppy.objects.create(
+            name='Casper', age=3, breed='Bull Dog', color='Black')
+        self.muffin = Puppy.objects.create(
+            name='Muffin', age=1, breed='Gradane', color='Brown')
+        self.rambo = Puppy.objects.create(
+            name='Rambo', age=2, breed='Labrador', color='Black')
+        self.ricky = Puppy.objects.create(
+            name='Ricky', age=6, breed='Labrador', color='Brown')
