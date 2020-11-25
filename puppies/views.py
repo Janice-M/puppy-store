@@ -13,7 +13,7 @@ def get_delete_update_puppy(request, pk):
     except Puppy.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
     # get details of a single puppy
-   if request.method == 'GET':
+    if request.method == 'GET':
         serializer = PuppySerializer(puppy)
         return Response(serializer.data)
     
