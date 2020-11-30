@@ -74,7 +74,7 @@ class CreateNewPuppyTest(TestCase):
             'color': 'White'
         }
     
-     def test_create_valid_puppy(self):
+    def test_create_valid_puppy(self):
             response = client.post(
             reverse('get_post_puppies'),
             data=json.dumps(self.valid_payload),
