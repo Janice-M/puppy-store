@@ -59,3 +59,11 @@ class GetSinglePuppyTest(TestCase):
         
 class CreateNewPuppyTest(TestCase):
     """ Test module for inserting a new puppy """
+    
+    def setUp(self):
+        self.valid_payload = {
+            'name': 'Muffin',
+            'age': 4,
+            'breed': 'Pamerion',
+            'color': 'White'
+        }
