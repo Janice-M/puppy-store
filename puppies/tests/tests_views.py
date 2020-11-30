@@ -67,3 +67,9 @@ class CreateNewPuppyTest(TestCase):
             'breed': 'Pamerion',
             'color': 'White'
         }
+        self.invalid_payload = {
+            'name': '',
+            'age': 4,
+            'breed': 'Pamerion',
+            'color': 'White'
+        }
