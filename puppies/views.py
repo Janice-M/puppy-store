@@ -32,5 +32,14 @@ def get_post_puppies(request):
         serializer = PuppySerializer(puppies, many=True)
         return Response(serializer.data)
     # insert a new record for a puppy
+    
+    
+    if request.method == 'POST':
+        data = {
+            'name': request.data.get('name'),
+            'age': int(request.data.get('age')),
+            'breed': request.data.get('breed'),
+            'color': request.data.get('color')
+        }
     elif request.method == 'POST':
         return Response({})
