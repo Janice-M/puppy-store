@@ -81,7 +81,7 @@ class CreateNewPuppyTest(TestCase):
             content_type='application/json'
         )
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-       def test_create_invalid_puppy(self):
+    def test_create_invalid_puppy(self):
             response = client.post(
             reverse('get_post_puppies'),
             data=json.dumps(self.invalid_payload),
